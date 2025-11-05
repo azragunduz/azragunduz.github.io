@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <title>Ders Programı - Internal CSS</title>
+  <style>
+    body { font-family: "Segoe UI", Tahoma, Arial, sans-serif; }
+    h1 { text-align:center; margin-top:18px; }
+    .schedule { width:90%; margin:20px auto; border-collapse:collapse; }
+    .schedule th, .schedule td { border:1px solid #bbb; padding:10px; }
+    .schedule thead th { background:#2c3e50; color:white; border:2px solid #444; }
+    .alt1 { background:#ecf0f1; }
+    .alt2 { background:#f9e79f; }
+    .time-col { text-align:center; font-weight:bold; width:120px; background:#fff; }
+    @media (max-width:600px) {
+      .schedule { font-size:14px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Ders Programı (Internal CSS)</h1>
+
+  <table class="schedule" aria-label="Ders programı">
+    <thead>
+      <tr>
+        <th>Saat / Gün</th>
+        <th>Pazartesi</th><th>Salı</th><th>Çarşamba</th><th>Perşembe</th><th>Cuma</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="time-col">09:00 - 10:00</td>
+        <td class="alt1">Matematik</td>
+        <td class="alt2">Fizik</td>
+        <td class="alt1">Programlama</td>
+        <td class="alt2">Kimya</td>
+        <td class="alt1">Türkçe</td>
+      </tr>
+      <tr>
+        <td class="time-col">10:15 - 11:15</td>
+        <td class="alt2">Geometri</td>
+        <td class="alt1">Laboratuvar</td>
+        <td class="alt2">Algoritma</td>
+        <td class="alt1">İngilizce</td>
+        <td class="alt2">Beden Eğitimi</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
