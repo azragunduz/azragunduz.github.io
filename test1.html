@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Programcılığı Testi</title>
+</head>
+<body>
+
+    <h1>Web Programcılığı Sınavı</h1>
+    
+    <form>
+
+        
+        <p><b>Adınız Soyadınız:</b></p>
+        <input type="text" name="ogrenci_ad" placeholder="Ad Soyad" required>
+        <br><br>
+
+        <p><b>Soru 1: HTML bir programlama dili midir?</b></p>
+        <input type="radio" name="soru1" value="evet" required> Evet<br>
+        <input type="radio" name="soru1" value="hayir"> Hayır
+        <br><br>
+
+        <p><b>Soru 2: Hangileri web tarayıcısıdır? (Birden fazla doğru olabilir)</b></p>
+        <input type="checkbox" name="tarayici1" value="chrome"> Google Chrome<br>
+        <input type="checkbox" name="tarayici2" value="vscode"> VS Code<br>
+        <input type="checkbox" name="tarayici3" value="firefox"> Firefox<br><br>
+
+        <p><b>Soru 3: CSS ne için kullanılır?</b></p>
+        <select name="soru3" required>
+            <option value="">Seçiniz</option>
+            <option value="stil">Stil vermek için (Renk, Yazı Tipi, vb.)</option>
+            <option value="yapi">Sayfa yapısı için (Başlık, Paragraf, vb.)</option>
+        </select>
+        <br><br>
+        
+        <p><b>Soru 4: HTML’de başlık oluşturmak için hangi etiketi kullanırız?</b></p>
+        <textarea name="soru4" rows="3" cols="40" placeholder="Örn: &lt;p&gt;"></textarea> 
+        <br><br>
+
+        <input type="submit" value="Sınavı Gönder">
+        <input type="reset" value="Temizle">
+    </form>
+
+</body>
+</html>
