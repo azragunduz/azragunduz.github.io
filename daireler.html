@@ -5,55 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Venn Şeması - 3 Daire</title>
   <style>
-   <style>
- 
-  .daire-container {
-    position: relative; /* İçindeki dairelerin buna göre konumlanması için */
-    width: 420px;
-    height: 320px;
-    margin-top: 50px;
-  }
+    .daire-container {
+      position: relative; 
+      width: 420px;
+      height: 320px;
+      margin-top: 50px;
+    }
 
-  .daire {
-    border-radius: 50%; /* Daire şekli */
-    position: absolute;
-    opacity: 0.65; /* Renkler daha yumuşak karışsın */
-    transition: transform 0.3s ease; /* Hover efekti için */
-  }
+    .daire {
+      border-radius: 50%;
+      position: absolute;
+      opacity: 0.65;
+    }
 
-  .daire:hover {
-    transform: scale(1.1);
-  }
+    #daire1 {
+      background-color: #f4b6c2;
+      width: 180px;
+      height: 180px;
+      top: 20px;
+      left: 20px;
+    }
 
-  #daire1 {
-    background-color: #f4b6c2; /* Pastel pembe */
-    width: 180px;
-    height: 180px;
-    top: 20px;
-    left: 20px;
-  }
+    #daire2 {
+      background-color: #b5ead7;
+      width: 190px;
+      height: 190px;
+      top: 20px;
+      left: 130px;
+    }
 
-  #daire2 {
-    background-color: #b5ead7; /* Pastel mint yeşili */
-    width: 190px;
-    height: 190px;
-    top: 20px;
-    left: 130px;
-  }
-
-  #daire3 {
-    background-color: #c7ceea; /* Pastel mavi-lila */
-    width: 200px;
-    height: 200px;
-    top: 80px;
-    left: 75px;
-  }
-</style>
-
-<div class="daire-container">
-  <div class="daire" id="daire1"></div>
-  <div class="daire" id="daire2"></div>
-  <div class="daire" id="daire3"></div>
-</div>
+    #daire3 {
+      background-color: #c7ceea;
+      width: 200px;
+      height: 200px;
+      top: 80px;
+      left: 75px;
+    }
+  </style>
+</head>
+<body>
+  <div class="daire-container">
+    <div class="daire" id="daire1"></div>
+    <div class="daire" id="daire2"></div>
+    <div class="daire" id="daire3"></div>
+  </div>
 </body>
 </html>
