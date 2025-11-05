@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTE311 Animasyon Görevi 💫</title>
+<style>
+body {
+  background: #f6ede7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+  font-family: 'Segoe UI Emoji', 'Arial', sans-serif;
+}
+
+/* Genel top stili */
+.ball {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  position: relative;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* 1️⃣ Yukarı Aşağı Giden */
+.bounce {
+  background-color: #d7b89c;
+  animation: upDown 3s ease-in-out infinite alternate;
+}
+@keyframes upDown {
+  from { top: 0; }
+  to { top: 150px; }
+}
+
+/* 2️⃣ Büyüyüp Küçülen ve Rengi Değişen */
+.scaleColor {
+  background-color: #e7bfae;
+  animation: growColor 3s ease-in-out infinite alternate;
+}
+@keyframes growColor {
+  0% { transform: scale(1); background-color: #e7bfae; }
+  25% { background-color: #d9a688; }
+  50% { transform: scale(1.4); background-color: #f3c7b3; }
+  75% { background-color: #d39e85; }
+  100% { transform: scale(1); background-color: #e7bfae; }
+}
+
+/* 3️⃣ Transparanlığı Azalan-Artan */
+.fade {
+  background-color: #e4cfc3;
+  animation: fadeInOut 3s ease-in-out infinite alternate;
+}
+@keyframes fadeInOut {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+/* 4️⃣ Sağa Sola Giden */
+.leftRight {
+  background-color: #e0bfa5;
+  animation: moveLR 4s ease-in-out infinite alternate;
+}
+@keyframes moveLR {
+  0% { left: 0; }
+  100% { left: 200px; }
+}
+
+/* 5️⃣ Dönen */
+.spin {
+  background-color: #e9d2b8;
+  animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body>
+
+<div class="ball bounce">😊</div>
+<div class="ball scaleColor">😍</div>
+<div class="ball fade">😌</div>
+<div class="ball leftRight">😁</div>
+<div class="ball spin">😉</div>
+
+</body>
+</html>
