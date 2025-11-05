@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venn Şeması - 3 Daire</title>
+  <style>
+    body {
+      background-color: #f7f6f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      position: relative;
+      width: 350px;
+      height: 300px;
+    }
+
+    .circle {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      opacity: 0.6;
+      transition: 0.3s;
+    }
+
+    .circle:hover {
+      opacity: 0.85;
+      transform: scale(1.05);
+    }
+
+    .c1 {
+      background-color: #f8c8a0;
+      left: 0;
+      top: 50px;
+    }
+
+    .c2 {
+      background-color: #f7d9c4;
+      right: 0;
+      top: 50px;
+    }
+
+    .c3 {
+      background-color: #d6cadd;
+      left: 75px;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>
+  </div>
+</body>
+</html>
 
