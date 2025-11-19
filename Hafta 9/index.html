@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Çiçekler</title>
+
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial;
+    transition: background 0.5s;
+  }
+
+  /* Daire */
+  #circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #f5c396;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  /* Kutu düzeni */
+  .box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .box {
+    width: 160px;
+    height: 120px;
+    border-radius: 12px;
+    background: #ffbfa3;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  button {
+    margin: 5px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #c7d8ff; 
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #a9c4ff;
+  }
+</style>
+</head>
+
+<body>
+
+<div id="circle">
+  <img id="circleImg" src="">
+</div>
+
+<div class="box-container">
+
+  <div>
+    <div class="box"><img id="img1" src="hafta9resimleri1.jpg"></div>
+    <button onclick="toggle('img1', true)">Göster</button>
+    <button onclick="toggle('img1', false)">Gizle</button>
+  </div>
+
+  <div>
+    <div class="box"><img id="img2" src="hafta9resimleri2.jpg"></div>
+    <button onclick="toggle('img2', true)">Göster</button>
+    <button onclick="toggle('img2', false)">Gizle</button>
+  </div>
+
+  <div>
+    <div class="box"><img id="img3" src="hafta9resimleri3.jpg"></div>
+    <button onclick="toggle('img3', true)">Göster</button>
+    <button onclick="toggle('img3', false)">Gizle</button>
+  </div>
+
+</div>
+
+<script>
+
+  /* --- Rastgele Arka Plan Renkleri --- */
+  function randomBg() {
+    const colors = [
+      "#f2d0a9", // soft sıcak bej
+      "#ffd6a5", // pastel turuncu
+      "#ffb5a7", // pastel pembe
+      "#d4e2d4", // soft yeşil
+      "#c1d3fe", // pastel mavi
+      "#e2c2b9"  // sıcak soft kahve
+    ];
+    document.body.style.background = colors[Math.floor(Math.random() * colors.length)];
+  }
+
+  /* --- Yuvarlak İçin 10 Resim --- */
+  const circleImages = [
+    "hafta9resimleri1.jpg",
+    "hafta9resimleri2.jpg",
+    "hafta9resimleri3.jpg",
+    "hafta9resimleri4.jpg",
+    "hafta9resimleri5.jpg",
+    "hafta9resimleri6.jpg",
+    "hafta9resimleri7.jpg",
+    "hafta9resimleri8.jpg",
+    "hafta9resimleri9.jpg",
+    "hafta9resimleri10.jpg"
+  ];
+
+  function randomCircleImg() {
+    const pick = Math.floor(Math.random() * circleImages.length);
+    document.getElementById("circleImg").src = circleImages[pick];
+  }
+
+  /* Göster / Gizle */
+  function toggle(id, show) {
+    document.getElementById(id).style.display = show ? "block" : "none";
+  }
+
+  /* Sayfa açılır açılmaz çalışsın */
+  randomBg();
+  randomCircleImg();
+
+</script>
+
+</body>
+</html>
