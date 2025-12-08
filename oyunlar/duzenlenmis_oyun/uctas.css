@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #E3F09B; /* açık yeşil nude */
+    background-color: #e7dadd; /* soft gri-pembe nude */
     text-align: center;
     font-family: Arial, sans-serif;
 }
@@ -31,10 +31,10 @@ body {
     width: 18vmin;
     border-radius: 1rem;
     border: none;
-    font-size: 8vmin;
-    background-color: #F5F5F2;
     box-shadow: 0 0 1rem rgba(0,0,0,0.3);
-    cursor: pointer;
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #F5F5F2;
 }
 
 #reset-btn {
@@ -44,7 +44,7 @@ body {
     border: none;
     height: 10vmin;
     width: 10vmin;
-    margin-top: 20px;
+    cursor: pointer;
 }
 
 #new-btn {
@@ -54,6 +54,7 @@ body {
     color: white;
     border-radius: 1rem;
     border: none;
+    cursor: pointer;
 }
 
 .msg-container {
