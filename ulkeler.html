@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ülke Kartları</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #1e3a8a;
+      font-weight: 700;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+
+    .country-card {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .country-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .country-card img {
+      border-radius: 10px;
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .country-card h5 {
+      font-weight: 600;
+      color: #1e3a8a;
+      margin-bottom: 5px;
+    }
+
+    .country-card p {
+      color: #444;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .country-card .continent {
+      font-weight: bold;
+      color: #1e3a8a;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body class="p-4">
+
+  <header>
+    <h2>Dünyadan Ülkeler</h2>
+  </header>
+
+  <div class="container text-center">
+    <div class="row g-4">
+
+      <!-- 1 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+        <div class="country-card">
+          <img src="https://flagcdn.com/w320/tr.png" alt="Türkiye">
+          <h5>Türkiye</h5>
+          <p class="continent">Avrasya</p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+        <div class="country-card">
+          <img src="https://flagcdn.com/w320/fr.png" alt="Fransa">
+          <h5>Fransa</h5>
+          <p class="continent">Avrupa</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+        <div class="country-card">
+          <img src="https://flagcdn.com/w320/jp.png" alt="Japonya">
+          <h5>Japonya</h5>
+          <p class="continent">Asya</p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+        <div class="country-card">
+          <img src="https://flagcdn.com/w320/br.png" alt="Brezilya">
+          <h5>Brezilya</h5>
+          <p class="continent">Güney Amerika</p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+        <div class="country-card">
+          <img src="https://flagcdn.com/w320/za.png" alt="Güney Afrika">
+          <h5>Güney Afrika</h5>
+          <p class="continent">Afrika</p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+        <div class="country-card">
+          <img src="https://flagcdn.com/w320/au.png" alt="Avustralya">
+          <h5>Avustralya</h5>
+          <p class="continent">Okyanusya</p>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+        <div class="country-card">
+          <img src="https://flagcdn.com/w320/us.png" alt="Amerika Birleşik Devletleri">
+          <h5>ABD</h5>
+          <p class="continent">Kuzey Amerika</p>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+        <div class="country-card">
+          <img src="https://flagcdn.com/w320/ca.png" alt="Kanada">
+          <h5>Kanada</h5>
+          <p class="continent">Kuzey Amerika</p>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+        <div class="country-card">
+          <img src="https://flagcdn.com/w320/in.png" alt="Hindistan">
+          <h5>Hindistan</h5>
+          <p class="continent">Asya</p>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+        <div class="country-card">
+          <img src="https://flagcdn.com/w320/eg.png" alt="Mısır">
+          <h5>Mısır</h5>
+          <p class="continent">Afrika</p>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+        <div class="country-card">
+          <img src="https://flagcdn.com/w320/de.png" alt="Almanya">
+          <h5>Almanya</h5>
+          <p class="continent">Avrupa</p>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+        <div class="country-card">
+          <img src="https://flagcdn.com/w320/ar.png" alt="Arjantin">
+          <h5>Arjantin</h5>
+          <p class="continent">Güney Amerika</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
